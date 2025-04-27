@@ -1,0 +1,117 @@
+.container {
+  margin: 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px; /* Limit max width for large screens */
+}
+
+/* Table Title */
+.table-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f2f2f2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #26263a;
+  color: #ffffff;
+  border-radius: 8px; /* Rounded corners for table */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for Table Headers */
+.table-header {
+  height: 60px;
+  text-align: center;
+  background-color: #3c3c4f;
+  border: 1px solid #444;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.table-header:hover {
+  background-color: #4a4a65; /* Hover effect for header */
+}
+
+/* Styling for Table Cells */
+.table-cell {
+  height: 60px;
+  text-align: center;
+  border: 1px solid #444;
+  vertical-align: middle;
+  color: #e1e1e1;
+  background-color: #2d2d3a;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.table-cell:hover {
+  background-color: #3b3b4f; /* Hover effect for cells */
+}
+
+/* Table Row Hover Effect */
+.table-row:hover {
+  background-color: #3a3a4f;
+  cursor: pointer;
+}
+
+/* Scrollable Table Body */
+.scrollable-tbody {
+  display: block;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.scrollable-tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.scrollable-tbody td,
+.scrollable-tbody th {
+  width: 70px; /* Increase width for better readability */
+}
+
+/* Sync header and body */
+thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Styling for Table Container - Adding padding for spacing */
+.table-container {
+  padding: 20px;
+  background-color: #1c1c2b;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding Responsive Design for Mobile/Tablets */
+@media (max-width: 768px) {
+  .table-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .table-cell,
+  .table-header {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .scrollable-tbody {
+    max-height: 250px;
+  }
+}

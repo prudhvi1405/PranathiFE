@@ -1,0 +1,210 @@
+.DashDashboard {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+  padding: 30px;
+  background-color: #26263a; /* Dark background with slightly lighter shade */
+  border-radius: 8px; /* Rounded corners for the main container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow around the container */
+}
+
+.main-heading {
+  font-size: 28px;
+  color: #ffffff; /* White text for a clean contrast */
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 18px;
+  color: #bbbbbb; /* Lighter grey text for description */
+  margin-bottom: 15px;
+}
+
+.columns-list {
+  margin-bottom: 25px;
+  font-size: 16px;
+  list-style-type: none;
+  padding-left: 0;
+  color: #e0e0e0;
+}
+
+.columns-list li {
+  margin: 8px 0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.columns-list li:hover {
+  color: #4a90e2; /* Add hover effect for list items */
+}
+
+.instructions {
+  font-size: 16px;
+  color: #d0d0d0;
+  margin-bottom: 25px;
+}
+
+.input-form {
+  margin-bottom: 35px;
+}
+
+.input-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow inputs to stack on smaller screens */
+}
+
+.input-box {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #3c3c52; /* Slightly lighter background for inputs */
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #4a90e2; /* Add a glowing blue border when focused */
+  background-color: #2c2c3e; /* Darken input on focus */
+}
+
+.submit-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+}
+
+.response-message {
+  font-size: 16px;
+  margin-top: 25px;
+  color: #9cdcfe;
+  background-color: #1e1e2f;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #2b2b3c;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Add slight shadow to the table */
+}
+
+.table-header, .table-cell {
+  padding: 12px;
+  border: 1px solid #444;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-header {
+  background-color: #3a3a4f;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f2f2f2;
+}
+
+.table-row:hover {
+  background-color: #373752;
+  cursor: pointer;
+}
+
+.scrollable-tbody {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.error-message {
+  font-size: 16px;
+  margin-top: 25px;
+  color: #ff7373;
+  background-color: #3e1f1f;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.newdashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #26263a; /* Lighter dark background */
+}
+
+.newdashboard-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  color: #ffffff;
+  background-color: #2e2e3b;
+  border-radius: 8px;
+}
+
+.newdashboard-main h2 {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.newdashboard-main p {
+  color: #bbbbbb;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* For Responsive Design */
+@media (max-width: 768px) {
+  .DashDashboard {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .main-heading {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .table-header, .table-cell {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .newdashboard-main h2 {
+    font-size: 22px;
+  }
+}
